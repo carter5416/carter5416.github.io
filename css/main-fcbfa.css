@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding-top: 20vw;
+  position: relative;
+  box-sizing: border-box;
+  /* 专辑图片 */
+  /* 歌曲信息 */
+  /* 控制条 */
+  /* 底部菜单 */
+}
+.wrapper .cover-img {
+  width: 70vw;
+  height: 70vw;
+  border-radius: 50%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: rotate(0deg);
+  margin-left: -35vw;
+}
+.wrapper .cover-img img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+.wrapper .cover-img.play {
+  animation: turn 20s linear infinite;
+}
+@keyframes turn {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wrapper .info {
+  position: absolute;
+  width: 100%;
+  top: 100vw;
+  text-align: center;
+  color: #fff;
+}
+.wrapper .info h2 {
+  font-weight: normal;
+  font-size: 24px;
+  margin-bottom: 3vw;
+}
+.wrapper .control {
+  width: 100%;
+  position: absolute;
+  top: 135vw;
+  height: 6vw;
+  display: flex;
+  color: #fff;
+}
+.wrapper .control .progress {
+  flex-grow: 1;
+  position: relative;
+}
+.wrapper .control .progress .dot {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  border: 0.7vw solid transparent;
+  border-radius: 50%;
+  background: #fff;
+  background-clip: content-box;
+  box-sizing: border-box;
+  top: 50%;
+  margin-top: -2vw;
+  margin-left: -2vw;
+  z-index: 2;
+}
+.wrapper .control .progress .front-bg,
+.wrapper .control .progress .back-bg {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.301);
+  border-top: 2.5vw solid transparent;
+  border-bottom: 2.5vw solid transparent;
+  box-sizing: border-box;
+  background-clip: content-box;
+}
+.wrapper .control .progress .front-bg {
+  width: 0%;
+  background: #fff;
+  background-clip: content-box;
+  z-index: 1;
+}
+.wrapper .control .cur-time,
+.wrapper .control .all-time {
+  padding: 0 3vw;
+}
+.wrapper .menu {
+  position: fixed;
+  width: 100%;
+  height: 15vw;
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  display: flex;
+}
+.wrapper .menu li {
+  flex-grow: 1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+}
+.wrapper .menu li:nth-of-type(1) {
+  background-image: url(/images/icon-like.png);
+}
+.wrapper .menu li.liking {
+  background-image: url(/images/icon-like-solid.png);
+}
+.wrapper .menu li:nth-of-type(2) {
+  background-image: url(/images/icon-prev.png);
+}
+.wrapper .menu li:nth-of-type(3) {
+  background-image: url(/images/icon-play.png);
+}
+.wrapper .menu li.play {
+  background-image: url(/images/icon-pause.png);
+}
+.wrapper .menu li:nth-of-type(4) {
+  background-image: url(/images/icon-next.png);
+}
+.wrapper .menu li:nth-of-type(5) {
+  background-image: url(/images/icon-list.png);
+}
+.wrapper .modal {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  display: none;
+  z-index: 4;
+  top: 0;
+  left: 0;
+}
+.wrapper .modal .list {
+  padding-top: 0vw;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(#050505, rgba(170, 170, 170));
+  color: #fff;
+  display: none;
+  box-sizing: border-box;
+}
+.wrapper .modal .list .volume-control {
+  height: 6vw;
+  display: flex;
+  padding: 2vw 11vw 0 3vw;
+}
+.wrapper .modal .list .volume-control .icon-laba {
+  width: 6vw;
+  height: 6vw;
+  background-image: url(/images/icon-laba.png);
+  background-size: 100%;
+  margin-right: 2vw;
+}
+.wrapper .modal .list .volume-control .progress {
+  flex-grow: 1;
+  position: relative;
+}
+.wrapper .modal .list .volume-control .progress .dot {
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  border: 0.7vw solid transparent;
+  border-radius: 50%;
+  background: #fff;
+  background-clip: content-box;
+  box-sizing: border-box;
+  top: 50%;
+  margin-top: -2vw;
+  margin-left: -2vw;
+  z-index: 2;
+  left: 100%;
+}
+.wrapper .modal .list .volume-control .progress .front-bg,
+.wrapper .modal .list .volume-control .progress .back-bg {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  border-top: 2.5vw solid transparent;
+  border-bottom: 2.5vw solid transparent;
+  box-sizing: border-box;
+  background-clip: content-box;
+}
+.wrapper .modal .list .volume-control .progress .front-bg {
+  width: 100%;
+  background: #fff;
+  background-clip: content-box;
+  z-index: 1;
+}
+.wrapper .modal .list .title {
+  text-align: center;
+  height: 12vw;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  line-height: 12vw;
+}
+.wrapper .modal .list dl {
+  font-size: 16px;
+  line-height: 12vw;
+  max-height: 40vh;
+  overflow-x: auto;
+}
+.wrapper .modal .list dl dd {
+  height: 12vw;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-left: 3vw;
+}
+.wrapper .modal .list dl dd.active {
+  color: #f40;
+}
+.wrapper .modal .list .close {
+  height: 12vw;
+  line-height: 12vw;
+  text-align: center;
+}
+

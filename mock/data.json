@@ -1,0 +1,129 @@
+[
+    {
+        "image": "../source/song_1.jpg",
+        "audioSrc": "../source/song_1.mp3",
+        "name": "听妈妈的话",
+        "album": "依然范特西",
+        "singer": "周杰伦",
+        "duration": 266,
+        "isLike": true
+    },
+    {
+        "image": "../source/song_2.jpg",
+        "audioSrc": "../source/song_2.mp3",
+        "name": "亲爱的旅人啊",
+        "album": "亲爱的旅人啊《千与千寻》",
+        "singer": "周深",
+        "duration": 244,
+        "isLike": true
+    },
+    {
+        "image": "../source/song_3.jpg",
+        "audioSrc": "../source/song_3.mp3",
+        "name": "望穿",
+        "album": "玩",
+        "singer": "陈立",
+        "duration": 232,
+        "isLike": true
+    },
+    {
+        "image": "../source/song_4.jpg",
+        "audioSrc": "../source/song_4.mp3",
+        "name": "烟火中的尘埃",
+        "album": "卡西莫多的礼物",
+        "singer": "华晨宇",
+        "duration": 321,
+        "isLike": true
+    },
+    {
+        "image": "../source/song_5.jpg",
+        "audioSrc": "../source/song_5.mp3",
+        "name": "思念时一种病",
+        "album": "OK",
+        "singer": "张震岳",
+        "duration": 259,
+        "isLike": true
+    },
+    {
+        "image": "../source/song_6.jpg",
+        "audioSrc": "../source/song_6.mp3",
+        "name": "山海",
+        "album": "歌手第二季 第9期",
+        "singer": "华晨宇",
+        "duration": 309,
+        "isLike": true
+    },
+    {
+        "image": "../source/song_7.jpg",
+        "audioSrc": "../source/song_7.mp3",
+        "name": "晴天",
+        "album": "叶惠美",
+        "singer": "周杰伦",
+        "duration": 269,
+        "isLike": true
+    },
+    {
+        "image": "../source/song_8.jpg",
+        "audioSrc": "../source/song_8.mp3",
+        "name": "奇妙能力歌(remix版)",
+        "album": "奇妙能力歌(remix版)",
+        "singer": "陈立",
+        "duration": 309,
+        "isLike": true
+    },
+    {
+        "image": "../source/song_9.jpg",
+        "audioSrc": "../source/song_9.mp3",
+        "name": "晚婚",
+        "album": "梦想声音第三季 第11期",
+        "singer": "谭维维",
+        "duration": 230,
+        "isLike": true
+    },
+    {
+        "image": "../source/song_10.jpg",
+        "audioSrc": "../source/song_10.mp3",
+        "name": "等你下课",
+        "album": "等你下课",
+        "singer": "周杰伦",
+        "duration": 270,
+        "isLike": true
+    },
+    {
+        "image": "../source/song_11.jpg",
+        "audioSrc": "../source/song_11.mp3",
+        "name": "初恋旧爱新欢",
+        "album": "红",
+        "singer": "RAINBOW计划/林力尧",
+        "duration": 303,
+        "isLike": true
+    },
+    {
+        "image": "../source/song_12.jpg",
+        "audioSrc": "../source/song_12.mp3",
+        "name": "Unpredictable",
+        "album": "Unpredictable",
+        "singer": "易烊千玺",
+        "duration": 230,
+        "isLike": true
+    },
+    {
+        "image": "../source/song_13.jpg",
+        "audioSrc": "../source/song_13.MP3",
+        "name": "第三人称",
+        "album": "第三人称",
+        "singer": "买辣椒也用券",
+        "duration": 269,
+        "isLike": true
+    },
+    {
+        "image": "../source/song_5.jpg",
+        "audioSrc": "../source/song_14.mp3",
+        "name": "小宇",
+        "album": "OK",
+        "singer": "张震岳",
+        "duration": 231,
+        "isLike": true
+    }
+
+]
