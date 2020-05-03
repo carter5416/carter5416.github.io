@@ -22,7 +22,7 @@
         "audioSrc": "../source/song_3.mp3",
         "name": "望穿",
         "album": "玩",
-        "singer": "陈立",
+        "singer": "陈粒",
         "duration": 232,
         "isLike": true
     },
@@ -67,7 +67,7 @@
         "audioSrc": "../source/song_8.mp3",
         "name": "奇妙能力歌(remix版)",
         "album": "奇妙能力歌(remix版)",
-        "singer": "陈立",
+        "singer": "陈粒",
         "duration": 309,
         "isLike": true
     },
