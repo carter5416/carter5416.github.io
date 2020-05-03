@@ -105,6 +105,7 @@ ul {
 .wrapper .control .cur-time,
 .wrapper .control .all-time {
   padding: 0 3vw;
+  line-height: 6vw;
 }
 .wrapper .menu {
   position: fixed;
