@@ -30,6 +30,7 @@ ul {
   left: 50%;
   transform: rotate(0deg);
   margin-left: -35vw;
+  animation: turn 20s linear infinite paused;
 }
 .wrapper .cover-img img {
   width: 80%;
@@ -37,7 +38,7 @@ ul {
   border-radius: 50%;
 }
 .wrapper .cover-img.play {
-  animation: turn 20s linear infinite;
+  animation: turn 20s linear infinite running;
 }
 @keyframes turn {
   0% {
