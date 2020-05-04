@@ -146,12 +146,16 @@ ul {
 .wrapper .modal {
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0);
   position: fixed;
-  display: none;
-  z-index: 4;
+  z-index: -10;
   top: 0;
   left: 0;
+  transition: all 0.2s;
+}
+.wrapper .modal.show {
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 4;
 }
 .wrapper .modal .list {
   padding-top: 0vw;
@@ -160,8 +164,12 @@ ul {
   bottom: 0;
   background: linear-gradient(#050505, rgba(170, 170, 170));
   color: #fff;
-  display: none;
+  transition: all 0.2s;
   box-sizing: border-box;
+  transform: translateY(100%);
+}
+.wrapper .modal .list.show {
+  transform: translateY(0%);
 }
 .wrapper .modal .list .volume-control {
   height: 6vw;
